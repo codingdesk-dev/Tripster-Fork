@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, Button, Container, Row, Col, Badge } from 'react-bootstrap'
 import './Buslist.css'
 import NavigationBar from '../../component/NavigationBar'
@@ -74,7 +74,7 @@ const BusList = () => {
         }
 
         updateBuses()
-    }, [parsedData.from, parsedData.to, parsedData.time])
+    }, [parsedData.from, parsedData.to, parsedData.time, parsedData.date])
 
     const handleReserveSeatClick = (busData) => {
         navigate(`/seatselect/${encodeURIComponent(JSON.stringify(busData))}`)
@@ -207,21 +207,6 @@ const BusList = () => {
             <Footer />
         </>
     )
-}
-
-// Function to convert ISO time to seconds
-function isoToSeconds(isoTime) {
-    const date = new Date(isoTime)
-    const hours = date.getUTCHours()
-    const minutes = date.getUTCMinutes()
-    const seconds = date.getUTCSeconds()
-    return hours * 3600 + minutes * 60 + seconds
-}
-
-// Function to convert time string to seconds
-function timeToSeconds(time) {
-    const [hours, minutes] = time.split(':').map(Number)
-    return hours * 3600 + minutes * 60
 }
 
 export default BusList
