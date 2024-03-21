@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Badge, Container, Row, Col, Button } from 'react-bootstrap'
 import './Seatselect.css'
@@ -26,14 +26,14 @@ const SelectSeatPage = () => {
 
             // Fetch bus information based on the provided bus ID
             const response = api.get(`bus/${parsedData.busId}`)
-            response.then((resData, err) => {
+            response.then((resData) => {
                 setBusId(resData.data.number)
             })
         } catch (error) {
             console.error('Error fetching bus information:', error)
             // Handle error, such as showing an error message to the user
         }
-    }, [data]) // useEffect will run whenever data changes
+    }, [bookedSeats, data, parsedData.busId, parsedData.reqDate, parsedData.seats]) // useEffect will run whenever data changes
 
     // State for booked and selected seats
     const [bookedSeats, setBookedSeats] = useState([])
@@ -110,6 +110,7 @@ const SelectSeatPage = () => {
     }
 
     // Component to represent individual seats
+    // eslint-disable-next-line react/prop-types
     const Seat = ({ number, status }) => (
         <Badge
             pill
