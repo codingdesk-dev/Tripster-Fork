@@ -1,5 +1,4 @@
-import React from 'react'
-import { Container, Row, Col, Card, Button, Navbar, Nav } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavigationBar from '../../component/NavigationBar'
@@ -58,7 +57,6 @@ const Dashboard = () => {
 
     function formatDate(inputDate) {
         const dateParts = inputDate.split('-') // Split the date string by '-'
-        const year = dateParts[0]
         const month = dateParts[1]
         const day = dateParts[2]
 
@@ -71,7 +69,7 @@ const Dashboard = () => {
     function hasDatePassed(dateString) {
         const inputDate = new Date(dateString)
         const currentDate = new Date()
-        return inputDate < currentDate
+        return inputDate <= currentDate
     }
 
     const paymentHistory = [{ payId: '#33894', date: '01/03' }]
