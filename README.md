@@ -30,6 +30,10 @@ GoBus is a web application designed to streamline the process of booking bus tic
 
 Contributions are welcome! If you have any suggestions, bug fixes, or new features to add, please feel free to open an issue or submit a pull request.
 
+<a href="https://github.com/nivindulakshitha/GoBus-Fork/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nivindulakshitha/GoBus-Fork" />
+</a>
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
