@@ -1,6 +1,6 @@
-# Tripster (GoBus)
+# GoBus
 
-Tripster is a web application designed to streamline the process of booking bus tickets online. With Tripster, users can easily search for buses based on their origin, destination, and preferred travel date and time. The application provides a user-friendly interface for browsing available buses, selecting seats, and completing the reservation process.
+GoBus is a web application designed to streamline the process of booking bus tickets online. With GoBus, users can easily search for buses based on their origin, destination, and preferred travel date and time. The application provides a user-friendly interface for browsing available buses, selecting seats, and completing the reservation process.
 
 ## Features
 
@@ -21,14 +21,18 @@ Tripster is a web application designed to streamline the process of booking bus 
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/codingdesk-dev/Tripster-Fork.git`
-2. Navigate to the project directory: `cd Tripster-Fork`
+1. Clone the repository: `git clone https://github.com/codingdesk-dev/GoBus-Fork.git`
+2. Navigate to the project directory: `cd GoBus-Fork`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug fixes, or new features to add, please feel free to open an issue or submit a pull request.
+
+<a href="https://github.com/nivindulakshitha/GoBus-Fork/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nivindulakshitha/GoBus-Fork" />
+</a>
 
 ## License
 
